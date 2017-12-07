@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Simple from './Simple.jsx'
+import Counter from './Counter.jsx'
 
 class App extends Component {
   render() {
@@ -13,7 +15,10 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <h1>xx</h1>
+
+        <Simple initValue={2} />
+
+        <Counter caption="First" />
       </div>
     );
   }
